@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(185deg, #8ba466, #bd734e);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 545px;
+  background-color: rgb(139, 198, 145);
+  padding: 40px 30px 70px;
+  margin: 100px auto;
+  -webkit-border-radius:10px ;
+  -moz-border-radius:10px ;
+  -ms-border-radius:10px ;
+  -o-border-radius:10px ;
+  border-radius:10px ;  
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.todo-app h2 img {
+  width: 35px;
+  margin-left: 10px;
+}
+.todo-app:hover {
+  box-shadow: 1px 2px 2px 3px black;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efe2e2;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+input {
+    width: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 0 0 1vw;
+  font-weight: 14px;
+  font-size: 1.35rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0a9c11;
+  -webkit-border-radius: 10p;
+  -moz-border-radius: 10p;
+  -ms-border-radius: 10p;
+  -o-border-radius: 10p;
+  border-radius: 10px;
+}
+#list-container {
+  margin-top: 3vh;
+  margin-left: 3vw;
+}
+button {
+  background-color: #068051;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 10px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+ul li::before {
+  content: "";
+  height: 24px;
+  width: 26px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: url(assets/images/232443-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 0 -3vw;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  color: #666;
+  background-image: url(assets/images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background-color: #f3f3f3;
+}
+@media screen and (max-width: 600px) {
+    button {
+        padding:4vw;
+        background-color: red;
+    }
+   
+    ul li::before {
+        margin:-0.2vh 0 0 -8vw;
+    }
+   
+}
+@media screen and (max-width: 600px) {
+    
+}
